@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('user_id')->constrained()->onDelete('cascade')->unique();
             $table->string('numero_colegiatura', 50)->nullable();
             $table->tinyInteger('verificado')->nullable();
-            $table->string('enfermedades_tratadas', 45)->nullable();
+            $table->string('enfermedades_tratadas', 255)->nullable();
             $table->string('facebook')->nullable();
             $table->string('instagram')->nullable();
             $table->text('experiencia')->nullable();
